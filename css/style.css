@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     --var-color1: #FAF9F9; 
-    --var-color2: #b38a58;
+    --var-color2: #8A7E72;
     --var-color3: #353B3C;
     --var-color4: #188FA7;
 
@@ -12,3 +12,56 @@
 body {
     background-color: var(--var-color1); /* set background color for body */
 }
+
+header {
+    padding: 12px; /*set padding to 20px */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*set font for header */
+    background-color: var(--var-color2); /*set background color for header */
+    color: var(--var-color1); /*set color for header */
+}
+
+.logo {
+    max-width: 40px;
+    margin-right: 20px;
+}
+/*set display and font size for h1 inside header */
+header h1 {
+    display: inline-block;
+    font-size: 44px; /*set font size*/
+    color: var(--var-color1)
+}
+
+header h1 .seo {
+    color: #d9dcd6; /* set logo color  */
+}
+/*start nav bar style  */
+header nav {
+    padding-top: 15px; /*set padding to 15px */
+    margin-right: 20px; /*set margin right to 20px */
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*set font */
+    font-size: 20px; /* set font size*/
+} 
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px; /*set margin left to 25 px */
+}
+/*set color for nav bar text */
+a {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    transition: .3s ease-in;
+
+}
+
+p {
+    font-size: 16px; /*set font size to 16px */
+}
+/*end nav bar style */
