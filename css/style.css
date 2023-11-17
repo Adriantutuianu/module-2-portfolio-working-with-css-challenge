@@ -33,7 +33,7 @@ header h1 {
 }
 
 .name {
-    color: black; 
+    color: var(--var-color3); 
 }
 /*start nav bar style  */
 header nav {
@@ -66,11 +66,10 @@ a {
 
 }
 
-p {
-    font-size: 16px; /*set font size to 16px */
-}
 /*end nav bar style */
 
+
+/* background image + subtitle style */
 .hero-banner {
     background-image: url(https://img.freepik.com/free-photo/flat-lay-workstation-with-copy-space-laptop_23-2148430879.jpg?w=2000&t=st=1700255131~exp=1700255731~hmac=1c39043b4ce23014106770c8e788a04e8e841d9115d0e08e829e2f937fada5a2); /*added background image */
     height: 250px; /*set height of image to 800px */ 
@@ -88,3 +87,5 @@ p {
     top: 200px;
     left: 100px;
   }
+
+  /*end background image + subtitle style */
