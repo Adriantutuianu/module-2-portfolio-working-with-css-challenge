@@ -2,13 +2,17 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    --var-color1: #FAF9F9; 
+   
+}
+
+:root {
+     --var-color1: #FAF9F9; 
     --var-color2: #8A7E72;
     --var-color3: #353B3C;
     --var-color4: #188FA7;
     --var-color5: #342E37;
-
 }
+
 
 body {
     background-color: var(--var-color1); /* set background color for body */
@@ -57,14 +61,12 @@ header nav ul li {
 a {
     color: #ffffff;
     text-decoration: underline;
-    text-decoration-color: var(--var-color5);
+    /* text-decoration-color: var(--var-color5); */
     cursor: pointer;
     position: relative;
     transition: .3s ease-in;
     padding: 2px;
-    
-
-}
+    }
 
 /*end nav bar style */
 
@@ -72,7 +74,7 @@ a {
 /* background image + subtitle style */
 .hero-banner {
     background-image: url(https://img.freepik.com/free-photo/flat-lay-workstation-with-copy-space-laptop_23-2148430879.jpg?w=2000&t=st=1700255131~exp=1700255731~hmac=1c39043b4ce23014106770c8e788a04e8e841d9115d0e08e829e2f937fada5a2); /*added background image */
-    height: 250px; /*set height of image to 800px */ 
+    height: 300px; /*set height of image to 800px */ 
     width: 100%; /*set width of image to 100% */
     margin-bottom: 25px; /*set margin bottom to 25px */
     background-size: cover; /*set background size : cover */
@@ -84,8 +86,27 @@ a {
 .hero-banner h2 {
     color: var(--var-color1);
     position: absolute;
-    top: 200px;
-    left: 100px;
+    top: 250px;
+    left: 50px;
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 5px;
   }
 
   /*end background image + subtitle style */
+
+  /* about section style  */
+#about {
+    display: flex;
+    justify-content: space-around;
+    /* height: auto; */
+    width: 100%;
+}
+
+  #about h2 {
+    width: 25%;
+  }
+
+  .about-text {
+    width: 65%;
+  }
