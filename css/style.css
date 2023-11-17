@@ -6,6 +6,7 @@
     --var-color2: #8A7E72;
     --var-color3: #353B3C;
     --var-color4: #188FA7;
+    --var-color5: #342E37;
 
 }
 
@@ -56,7 +57,7 @@ header nav ul li {
 a {
     color: #ffffff;
     text-decoration: underline;
-    text-decoration-color: var(--var-color1);
+    text-decoration-color: var(--var-color5);
     cursor: pointer;
     position: relative;
     transition: .3s ease-in;
@@ -69,3 +70,11 @@ p {
     font-size: 16px; /*set font size to 16px */
 }
 /*end nav bar style */
+.hero-banner {
+    background-image: url(https://img.freepik.com/free-photo/flat-lay-workstation-with-copy-space-laptop_23-2148430879.jpg?w=2000&t=st=1700255131~exp=1700255731~hmac=1c39043b4ce23014106770c8e788a04e8e841d9115d0e08e829e2f937fada5a2); /*added background image */
+    height: 250px; /*set height of image to 800px */ 
+    width: 100%; /*set width of image to 100% */
+    margin-bottom: 25px; /*set margin bottom to 25px */
+    background-size: cover; /*set background size : cover */
+    background-position: center; /*set background position to center */
+}
