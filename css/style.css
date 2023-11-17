@@ -14,13 +14,13 @@ body {
 }
 
 header {
-    padding: 12px; /*set padding to 20px */
+    padding: 12px; /*set padding to 12px */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*set font for header */
     background-color: var(--var-color2); /*set background color for header */
     color: var(--var-color1); /*set color for header */
 }
 
-.logo {
+header .logo {
     max-width: 40px;
     margin-right: 20px;
 }
@@ -31,11 +31,12 @@ header h1 {
     color: var(--var-color1)
 }
 
-header h1 .seo {
-    color: #d9dcd6; /* set logo color  */
+.name {
+    color: black; 
 }
 /*start nav bar style  */
 header nav {
+  
     padding-top: 15px; /*set padding to 15px */
     margin-right: 20px; /*set margin right to 20px */
     float: right;
@@ -54,10 +55,13 @@ header nav ul li {
 /*set color for nav bar text */
 a {
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: var(--var-color1);
     cursor: pointer;
     position: relative;
     transition: .3s ease-in;
+    padding: 2px;
+    
 
 }
 
