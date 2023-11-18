@@ -97,7 +97,7 @@ a {
 #about {
   display: flex;
   justify-content: space-around;
-  height: auto;
+
   width: 100%;
 }
 
@@ -105,6 +105,17 @@ a {
   width: 25%;
   display: flex;
   justify-content: flex-end;
+  position: relative;
+}
+
+#about h2::after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--var-color2);
 }
 
 .about-text {
