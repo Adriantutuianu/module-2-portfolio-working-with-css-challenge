@@ -60,9 +60,10 @@ header nav ul li {
 /*set color for nav bar text */
 a {
   color: var(--var-color1);
-   position: relative;
+  position: relative;
   transition: 0.3s ease-in;
-  padding: 6px;
+  padding: 4px;
+  text-decoration: none;
 }
 
 a::after {
@@ -74,7 +75,7 @@ a::after {
   position: absolute;
   bottom: 0;
   left: 0;
- }
+}
 /*end nav bar style */
 
 /* background image + subtitle style */
@@ -93,8 +94,8 @@ a::after {
   position: absolute;
   top: 250px;
   left: 50px;
-  background-color: black;
-  border: 3px solid white;
+  background-color: var(--var-color3);
+  border: 3px solid var(--var-color1);
   border-radius: 5px;
 }
 
