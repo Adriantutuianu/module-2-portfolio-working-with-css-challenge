@@ -10,28 +10,35 @@
   --var-color3: #353b3c;
   --var-color4: #188fa7;
   --var-color5: #342e37;
+  --content-size: 1400px;
 }
 
 body {
   background-color: var(--var-color1); /* set background color for body */
-  max-width: 1600px;
-  margin: 0 auto;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 12px; set padding to 12px */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif; /*set font for header */
   background-color: var(--var-color2); /*set background color for header */
   color: var(--var-color1); /*set color for header */
 }
 
+header .header-container {
+  width: 100%;
+  max-width: var(--content-size);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 header .logo-name .logo {
   max-width: 37px;
-  margin: 10px 15px 0 10px;  
+  margin: 10px 15px 0 10px;
 }
 /*set display and font size for h1 inside header */
 header .logo-name h1 {
@@ -45,7 +52,7 @@ header .logo-name h1 {
 }
 /*start nav bar style  */
 header nav {
-  margin-right: 20px; 
+  margin-right: 20px;
   font-size: 18px; /* set font size*/
 }
 
@@ -83,6 +90,8 @@ a::after {
   background-image: url(https://img.freepik.com/free-photo/flat-lay-workstation-with-copy-space-laptop_23-2148430879.jpg?w=2000&t=st=1700255131~exp=1700255731~hmac=1c39043b4ce23014106770c8e788a04e8e841d9115d0e08e829e2f937fada5a2); /*added background image */
   height: 300px; /*set height of image to 800px */
   width: 100%; /*set width of image to 100% */
+  max-width: var(--content-size);
+  margin: 0 auto;
   margin-bottom: 25px; /*set margin bottom to 25px */
   background-size: cover; /*set background size : cover */
   background-position: center; /*set background position to center */
@@ -101,20 +110,20 @@ a::after {
 
 /*end background image + subtitle style */
 
-
 .page-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
-  margin-bottom: 30px;
+  max-width: var(--content-size);
+  margin: 0 auto 30px auto;
 }
 /* about section style  */
-#about h2 {
-  width: 10%;
+#about h2,
+.contact h2 {
+  width: 20%;
   display: flex;
   justify-content: flex-end;
   position: relative;
-  margin-right: 80px;
 }
 
 #about h2::after {
@@ -128,22 +137,27 @@ a::after {
 }
 
 .about-text {
-  width: 65%;
+  width: 75%;
 }
 
-.contact h2 {
-  width: 10%;
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  margin-right: 80px;
+#contact h2::after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--var-color2);
 }
 
 .contact-text {
-  width: 65%;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.contact-text a{
+.contact-text a {
   color: var(--var-color3);
 }
 
@@ -151,8 +165,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
-  border-top: 1px solid black;
+  height: 50px;
+  border-top: 2px solid black;
   background-color: var(--var-color2);
   color: var(--var-color1);
   font-size: 18px;
