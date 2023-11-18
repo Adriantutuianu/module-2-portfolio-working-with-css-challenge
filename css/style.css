@@ -1,112 +1,112 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-   
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 :root {
-     --var-color1: #FAF9F9; 
-    --var-color2: #8A7E72;
-    --var-color3: #353B3C;
-    --var-color4: #188FA7;
-    --var-color5: #342E37;
+  --var-color1: #faf9f9;
+  --var-color2: #8a7e72;
+  --var-color3: #353b3c;
+  --var-color4: #188fa7;
+  --var-color5: #342e37;
 }
 
-
 body {
-    background-color: var(--var-color1); /* set background color for body */
+  background-color: var(--var-color1); /* set background color for body */
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 header {
-    padding: 12px; /*set padding to 12px */
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*set font for header */
-    background-color: var(--var-color2); /*set background color for header */
-    color: var(--var-color1); /*set color for header */
+  padding: 12px; /*set padding to 12px */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif; /*set font for header */
+  background-color: var(--var-color2); /*set background color for header */
+  color: var(--var-color1); /*set color for header */
 }
 
 header .logo {
-    max-width: 40px;
-    margin-right: 20px;
+  max-width: 40px;
+  margin-right: 20px;
 }
 /*set display and font size for h1 inside header */
 header h1 {
-    display: inline-block;
-    font-size: 44px; /*set font size*/
-    color: var(--var-color1)
+  display: inline-block;
+  font-size: 44px; /*set font size*/
+  color: var(--var-color1);
 }
 
 .name {
-    color: var(--var-color3); 
+  color: var(--var-color3);
 }
 /*start nav bar style  */
 header nav {
-  
-    padding-top: 15px; /*set padding to 15px */
-    margin-right: 20px; /*set margin right to 20px */
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*set font */
-    font-size: 20px; /* set font size*/
-} 
+  padding-top: 15px; /*set padding to 15px */
+  margin-right: 20px; /*set margin right to 20px */
+  float: right;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; /*set font */
+  font-size: 20px; /* set font size*/
+}
 
 header nav ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 header nav ul li {
-    display: inline-block;
-    margin-left: 25px; /*set margin left to 25 px */
+  display: inline-block;
+  margin-left: 25px; /*set margin left to 25 px */
 }
 /*set color for nav bar text */
 a {
-    color: #ffffff;
-    text-decoration: underline;
-    /* text-decoration-color: var(--var-color5); */
-    cursor: pointer;
-    position: relative;
-    transition: .3s ease-in;
-    padding: 2px;
-    }
+  color: #ffffff;
+  text-decoration: underline;
+  /* text-decoration-color: var(--var-color5); */
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s ease-in;
+  padding: 2px;
+}
 
 /*end nav bar style */
 
-
 /* background image + subtitle style */
 .hero-banner {
-    background-image: url(https://img.freepik.com/free-photo/flat-lay-workstation-with-copy-space-laptop_23-2148430879.jpg?w=2000&t=st=1700255131~exp=1700255731~hmac=1c39043b4ce23014106770c8e788a04e8e841d9115d0e08e829e2f937fada5a2); /*added background image */
-    height: 300px; /*set height of image to 800px */ 
-    width: 100%; /*set width of image to 100% */
-    margin-bottom: 25px; /*set margin bottom to 25px */
-    background-size: cover; /*set background size : cover */
-    background-position: center; /*set background position to center */
-    position: relative;
- 
+  background-image: url(https://img.freepik.com/free-photo/flat-lay-workstation-with-copy-space-laptop_23-2148430879.jpg?w=2000&t=st=1700255131~exp=1700255731~hmac=1c39043b4ce23014106770c8e788a04e8e841d9115d0e08e829e2f937fada5a2); /*added background image */
+  height: 300px; /*set height of image to 800px */
+  width: 100%; /*set width of image to 100% */
+  margin-bottom: 25px; /*set margin bottom to 25px */
+  background-size: cover; /*set background size : cover */
+  background-position: center; /*set background position to center */
+  position: relative;
 }
 
 .hero-banner h2 {
-    color: var(--var-color1);
-    position: absolute;
-    top: 250px;
-    left: 50px;
-    background-color: black;
-    border: 3px solid white;
-    border-radius: 5px;
-  }
-
-  /*end background image + subtitle style */
-
-  /* about section style  */
-#about {
-    display: flex;
-    justify-content: space-around;
-    /* height: auto; */
-    width: 100%;
+  color: var(--var-color1);
+  position: absolute;
+  top: 250px;
+  left: 50px;
+  background-color: black;
+  border: 3px solid white;
+  border-radius: 5px;
 }
 
-  #about h2 {
-    width: 25%;
-  }
+/*end background image + subtitle style */
 
-  .about-text {
-    width: 65%;
-  }
+/* about section style  */
+#about {
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  width: 100%;
+}
+
+#about h2 {
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-text {
+  width: 65%;
+}
