@@ -19,19 +19,22 @@ body {
 }
 
 header {
-  padding: 12px; /*set padding to 12px */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 12px; set padding to 12px */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif; /*set font for header */
   background-color: var(--var-color2); /*set background color for header */
   color: var(--var-color1); /*set color for header */
 }
 
-header .logo {
-  max-width: 40px;
-  margin-right: 20px;
+header .logo-name .logo {
+  max-width: 37px;
+  margin: 10px 15px 0 10px;  
 }
 /*set display and font size for h1 inside header */
-header h1 {
+header .logo-name h1 {
   display: inline-block;
   font-size: 44px; /*set font size*/
   color: var(--var-color1);
@@ -42,11 +45,8 @@ header h1 {
 }
 /*start nav bar style  */
 header nav {
-  padding-top: 15px; /*set padding to 15px */
-  margin-right: 20px; /*set margin right to 20px */
-  float: right;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; /*set font */
-  font-size: 20px; /* set font size*/
+  margin-right: 20px; 
+  font-size: 18px; /* set font size*/
 }
 
 header nav ul {
@@ -101,14 +101,14 @@ a::after {
 
 /*end background image + subtitle style */
 
-/* about section style  */
-#about {
+
+.page-section {
   display: flex;
   justify-content: center;
   width: 100%;
   margin-bottom: 30px;
 }
-
+/* about section style  */
 #about h2 {
   width: 10%;
   display: flex;
@@ -131,12 +131,21 @@ a::after {
   width: 65%;
 }
 
-.contact {
-  background-color: burlywood;
-  height: 400px;
+.contact h2 {
+  width: 10%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  margin-right: 80px;
 }
 
+.contact-text {
+  width: 65%;
+}
 
+.contact-text a{
+  color: var(--var-color3);
+}
 
 footer {
   display: flex;
