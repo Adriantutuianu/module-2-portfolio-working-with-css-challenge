@@ -14,7 +14,7 @@
 
 body {
   background-color: var(--var-color1); /* set background color for body */
-  max-width: 1800px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -130,6 +130,13 @@ a::after {
 .about-text {
   width: 65%;
 }
+
+.contact {
+  background-color: burlywood;
+  height: 400px;
+}
+
+
 
 footer {
   display: flex;
