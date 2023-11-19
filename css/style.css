@@ -66,7 +66,7 @@ header nav ul li {
   margin-left: 25px; /*set margin left to 25 px */
 }
 /*set color for nav bar text */
-a {
+header a {
   color: var(--var-color1);
   position: relative;
   transition: 0.3s ease-in;
@@ -74,7 +74,7 @@ a {
   text-decoration: none;
 }
 
-a::after {
+header a::after {
   display: block;
   content: "";
   width: 100%;
@@ -151,8 +151,9 @@ a::after {
   grid-template-rows: 1fr 1fr 1fr; 
   gap: 30px 30px; 
   grid-template-areas: 
-    "project1 project1"
-    "project2 project3"
+  "project1 project1"
+  "project1 project1"
+  "project2 project3"
     "project4 project5"; 
 }
 .project1 { grid-area: project1; }
@@ -162,7 +163,11 @@ a::after {
 .project5 { grid-area: project5; }
 
 .project {
+  position: relative;
+  height: 100%;
+  min-height: 200px;
   border: 2px solid var(--var-color4);
+  list-style-type: none;
 }
 
 .project-image {
@@ -171,13 +176,22 @@ a::after {
 }
 
 .project-title {
+  position: absolute;
+  left: 20px;
+  padding: 3px 10px;
+  font-size: 18px;
   border: 1px solid #000;
   border-radius: 3px;
   bottom: 20px;
-  font-size: 18px;
-  left: 20px;
-  padding: 3px 10px;
   }
+
+.project1 .image {
+  background-image: url("../images/product-app.png"); /*added background image */
+  height: 100%; 
+  width: 100%;
+  background-size: cover; 
+  background-position: center;
+}
 
 .contact-info {
   width: 75%;
