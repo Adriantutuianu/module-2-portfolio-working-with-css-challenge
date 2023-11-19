@@ -94,8 +94,8 @@ a::after {
   max-width: var(--content-size);
   margin: 0 auto;
   margin-bottom: 25px; /*set margin bottom to 25px */
-  background-size: cover; /*set background size : cover */
-  background-position: center; /*set background position to center */
+  background-size: cover; 
+  background-position: center;
   position: relative;
 }
 
@@ -118,7 +118,8 @@ a::after {
 }
 /* about section style  */
 #about h2,
-.contact h2 {
+.contact h2, 
+#work h2 {
   width: 20%;
   display: flex;
   justify-content: flex-end;
@@ -126,7 +127,9 @@ a::after {
   text-align: end;
 }
 
-#about h2::after {
+#about h2::after,
+#work h2::after,
+#contact h2::after {
   content: "";
   position: absolute;
   right: -15px;
@@ -138,16 +141,6 @@ a::after {
 
 .about-text {
   width: 75%;
-}
-
-#contact h2::after {
-  content: "";
-  position: absolute;
-  right: -15px;
-  top: 0;
-  width: 3px;
-  height: 100%;
-  background: var(--var-color2);
 }
 
 .contact-text {
