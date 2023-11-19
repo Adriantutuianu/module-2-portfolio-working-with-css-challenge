@@ -158,7 +158,7 @@ header a::after {
 }
 .project1 {
   grid-area: project1;
-}
+  }
 .project2 {
   grid-area: project2;
 }
@@ -172,7 +172,7 @@ header a::after {
   grid-area: project5;
 }
 
-.project {
+.work-projects .project {
   position: relative;
   height: 100%;
   min-height: 200px;
@@ -181,7 +181,7 @@ header a::after {
   transition: 0.5s ease-in;
 }
 
-.project::after {
+.work-projects .project::after {
   content: "";
   position: absolute;
   top: 0;
@@ -193,11 +193,11 @@ header a::after {
   opacity: 0.5;
 }
 
-.project:hover::after {
+.work-projects .project:hover::after {
   content: unset;
 }
 
-.project-title {
+.work-projects .project .project-title {
   position: absolute;
   left: 20px;
   padding: 3px 10px;
@@ -208,15 +208,32 @@ header a::after {
   z-index: 2;
 }
 
-.project .image {
+.work-projects .project .project-image {
   width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center;
 }
 
-.project1 .image {
+.work-projects .project1 .project-image {
   background-image: url("../images/product-app.png"); /*added background image */
+}
+
+.work-projects .project2 .project-image {
+  background-image: url("../images/calculator-app.png"); /*added background image */
+
+}
+.work-projects .project3 .project-image {
+  background-image: url("../images/shopping-list-app.png"); /*added background image */
+
+}
+.work-projects .project4 .project-image {
+  background-image: url("../images/forkify-app.png"); /*added background image */
+
+}
+.work-projects .project5 .project-image {
+  background-image: url("../images/random-quotes-app.png"); /*added background image */
+
 }
 
 .contact-info {
