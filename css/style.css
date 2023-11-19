@@ -103,10 +103,8 @@ a::after {
   color: var(--var-color1);
   position: absolute;
   top: 250px;
-  left: 50px;
-  background-color: var(--var-color3);
-  border: 3px solid var(--var-color1);
-  border-radius: 5px;
+  right: 50px;
+  border: 1px solid var(--var-color2);
 }
 
 /*end background image + subtitle style */
