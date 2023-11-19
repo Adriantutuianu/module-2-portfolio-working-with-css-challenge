@@ -114,7 +114,7 @@ header a::after {
   justify-content: space-between;
   width: 100%;
   max-width: var(--content-size);
-  margin: 0 auto 30px auto;
+  margin: 0 auto 40px auto;
 }
 /* about section style  */
 #about h2,
@@ -136,7 +136,7 @@ header a::after {
   top: 0;
   width: 3px;
   height: 100%;
-  background: var(--var-color2);
+  background: var(--var-color3);
 }
 
 .about-text {
@@ -158,7 +158,7 @@ header a::after {
 }
 .project1 {
   grid-area: project1;
-  }
+}
 .project2 {
   grid-area: project2;
 }
@@ -188,9 +188,9 @@ header a::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--var-color4);
+  background-color: black;
   z-index: 1;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .work-projects .project:hover::after {
@@ -199,13 +199,13 @@ header a::after {
 
 .work-projects .project .project-title {
   position: absolute;
-  left: 20px;
+  left: 10px;
+  bottom: 10px;
   padding: 3px 10px;
-  font-size: 18px;
-  border: 1px solid #000;
-  border-radius: 3px;
-  bottom: 20px;
+  font-size: 20px;
+  border: 1px solid var(--var-color4);
   z-index: 2;
+  background-color: var(--var-color1);
 }
 
 .work-projects .project .project-image {
@@ -221,19 +221,15 @@ header a::after {
 
 .work-projects .project2 .project-image {
   background-image: url("../images/calculator-app.png"); /*added background image */
-
 }
 .work-projects .project3 .project-image {
   background-image: url("../images/shopping-list-app.png"); /*added background image */
-
 }
 .work-projects .project4 .project-image {
   background-image: url("../images/forkify-app.png"); /*added background image */
-
 }
 .work-projects .project5 .project-image {
   background-image: url("../images/random-quotes-app.png"); /*added background image */
-
 }
 
 .contact-info {
