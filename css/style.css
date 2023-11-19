@@ -143,14 +143,18 @@ a::after {
   width: 75%;
 }
 
-.contact-text {
+.work-projects {
+  width: 75%;
+}
+
+.contact-info {
   width: 75%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.contact-text a {
+.contact-info a {
   color: var(--var-color3);
 }
 
