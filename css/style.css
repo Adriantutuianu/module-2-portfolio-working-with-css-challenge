@@ -144,8 +144,21 @@ a::after {
 }
 
 .work-projects {
-  width: 75%;
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 15px 15px; 
+  grid-template-areas: 
+    "project1 project1"
+    "project2 project3"
+    "project4 project5"; 
 }
+.project1 { grid-area: project1; }
+.project2 { grid-area: project2; }
+.project3 { grid-area: project3; }
+.project4 { grid-area: project4; }
+.project5 { grid-area: project5; }
 
 .contact-info {
   width: 75%;
