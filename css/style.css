@@ -17,7 +17,7 @@ body {
   background-color: var(--var-color1); /* set background color for body */
   min-height: 100vh;
 }
-
+/* start set style header */
 header {
   display: flex;
   justify-content: space-between;
@@ -26,6 +26,7 @@ header {
     "Lucida Sans", Arial, sans-serif; /*set font for header */
   background-color: var(--var-color2); /*set background color for header */
   color: var(--var-color1); /*set color for header */
+  border-bottom: 2px solid black;
 }
 
 header .header-container {
@@ -36,7 +37,7 @@ header .header-container {
   align-items: center;
   justify-content: space-between;
 }
-
+/* set style logo  */
 header .logo-name .logo {
   max-width: 37px;
   margin: 10px 15px 0 10px;
@@ -44,11 +45,12 @@ header .logo-name .logo {
 /*set display and font size for h1 inside header */
 header .logo-name h1 {
   display: inline-block;
-  font-size: 44px; /*set font size*/
   color: var(--var-color1);
+  font-size: 44px; /*set font size*/
 }
 
-.name {
+.header-container h1 .name,
+.header-container nav ul li .name {
   color: var(--var-color3);
 }
 /*start nav bar style  */
@@ -66,21 +68,21 @@ header nav ul li {
   margin-left: 25px; /*set margin left to 25 px */
 }
 /*set color for nav bar text */
-header a {
-  color: var(--var-color1);
+header nav ul li a {
   position: relative;
-  transition: 0.3s ease-in;
   padding: 4px;
   text-decoration: none;
+  color: var(--var-color1);
+  transition: 0.3s ease-in;
 }
 
-header a::after {
+header nav ul li a::after {
+  position: absolute;
   display: block;
   content: "";
   width: 100%;
   height: 3px;
   background: var(--var-color5);
-  position: absolute;
   bottom: 0;
   left: 0;
 }
@@ -88,25 +90,23 @@ header a::after {
 
 /* background image + subtitle style */
 .hero-banner {
+  position: relative;
   background-image: url("../images/portfolio-photp.jpg"); /*added background image */
   height: 300px; /*set height of image to 800px */
   width: 100%; /*set width of image to 100% */
   max-width: var(--content-size);
-  margin: 0 auto;
-  margin-bottom: 25px; /*set margin bottom to 25px */
+  margin: 0 auto 25px auto;
   background-size: cover;
   background-position: center;
-  position: relative;
 }
 
 .hero-banner h2 {
-  color: var(--var-color1);
   position: absolute;
   top: 250px;
   right: 50px;
   border: 1px solid var(--var-color2);
+  color: var(--var-color1);
 }
-
 /*end background image + subtitle style */
 
 .page-section {
@@ -120,10 +120,10 @@ header a::after {
 #about h2,
 .contact h2,
 #work h2 {
-  width: 20%;
+  position: relative;
   display: flex;
   justify-content: flex-end;
-  position: relative;
+  width: 20%;
   text-align: end;
 }
 
@@ -142,7 +142,7 @@ header a::after {
 .about-text {
   width: 75%;
 }
-
+/* display grid layout */
 .work-projects {
   width: 75%;
   display: grid;
