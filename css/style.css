@@ -109,6 +109,10 @@ header nav ul li a::after {
 }
 /*end background image + subtitle style */
 
+.page-wrapper {
+  margin-right: 25px;
+}
+
 .page-section {
   display: flex;
   justify-content: space-between;
@@ -258,3 +262,56 @@ footer .footer-name {
   color: var(--var-color5);
   margin: 0 5px;
 }
+
+
+
+@media only screen and (max-width: 992px) {
+  .header-container {
+    flex-wrap: wrap;
+    height: 100px;
+  }
+  .header-container .logo-name {
+    margin-left: 20px;
+  }
+
+  .hero-banner {
+    height: 200px;
+  }
+
+  .hero-banner h2 {
+    top: 150px;
+  }
+
+  .work-projects {
+    width: 75%;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px 30px;
+    grid-template-areas:
+      "project1 project1"
+      "project2 project3"
+      "project4 project5";
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .work-projects {
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px 0;
+    grid-template-areas:
+      "project1"
+      "project2"
+      "project3"
+      "project4"
+      "project5";
+  }
+  .work-projects .project {
+    min-height: 150px;
+  }
+}
+
+/* @media only screen and (max-width: 600px) {...} */
