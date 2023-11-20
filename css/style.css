@@ -20,7 +20,8 @@ body {
 /* start set style header */
 header {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif; /*set font for header */
@@ -263,8 +264,6 @@ footer .footer-name {
   margin: 0 5px;
 }
 
-
-
 @media only screen and (max-width: 992px) {
   .header-container {
     flex-wrap: wrap;
@@ -293,6 +292,12 @@ footer .footer-name {
       "project1 project1"
       "project2 project3"
       "project4 project5";
+  }
+}
+
+@media only screen and (max-width: 851px) {
+  .header-container {
+    justify-content: center !important;
   }
 }
 
