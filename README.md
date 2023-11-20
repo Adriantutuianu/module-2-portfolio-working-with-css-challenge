@@ -95,7 +95,7 @@ N/A
 ## Usage 
 
 
-![Portfolio](images/01-css-challenge-demo.gif)
+![Portfolio](images/Mockup_portfolio.png)
 
 
 ## Credits
