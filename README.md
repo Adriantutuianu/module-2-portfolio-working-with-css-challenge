@@ -1,4 +1,4 @@
-# Unit 2 Challenge: Portfolio
+<!-- # Unit 2 Challenge: Portfolio
 
 ## Your Task
 
@@ -72,4 +72,38 @@ You are required to submit BOTH of the following for review:
 * The URL of the GitHub repository that contains your code. Give the repository a unique name and include a README file that describes the project.
 
 ---
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved. -->
+
+# Portfolio - Adrian Tutuianu
+
+
+## Description
+
+Welcome to my personal portfolio! This single-page website is a showcase of my skills and projects, crafted using HTML and CSS. Dive into my journey, explore my projects, and get to know me better. From web development to design, this portfolio reflects my passion for creating compelling digital experiences. Feel free to explore and reach out—I'm excited to connect!
+
+Technologies Used:
+
+HTML
+CSS 
+
+This website was deployed and you can see it live here: 
+
+## Installation
+
+N/A
+
+## Usage 
+
+
+![Portfolio](images/01-css-challenge-demo.gif)
+
+
+## Credits
+
+Edx Front End Web Bootcamp 
+
+## License
+
+MIT License 
+
+
