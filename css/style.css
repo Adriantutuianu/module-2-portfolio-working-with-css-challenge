@@ -321,11 +321,11 @@ footer .footer-name {
 
 @media only screen and (max-width: 470px) {
   header nav ul {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   header .logo-name h1 {
-    font-size: 34px;
+    font-size: 30px;
   }
 
   .hero-banner h2 {
