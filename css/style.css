@@ -147,6 +147,7 @@ header nav ul li a::after {
 .about-text {
   width: 75%;
 }
+
 /* display grid layout */
 .work-projects {
   width: 75%;
@@ -248,6 +249,7 @@ header nav ul li a::after {
   color: var(--var-color3);
 }
 
+/* footer style */
 footer {
   display: flex;
   justify-content: center;
@@ -264,6 +266,7 @@ footer .footer-name {
   margin: 0 5px;
 }
 
+/* media query- responsive website */
 @media only screen and (max-width: 992px) {
   .header-container {
     flex-wrap: wrap;
@@ -315,5 +318,3 @@ footer .footer-name {
     min-height: 150px;
   }
 }
-
-/* @media only screen and (max-width: 600px) {...} */

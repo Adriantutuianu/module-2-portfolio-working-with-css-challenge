@@ -4,7 +4,7 @@
 
 ## Description
 
-Welcome to my personal portfolio! This single-page website is a showcase of my skills and projects, crafted using HTML and CSS. Dive into my journey, explore my projects, and get to know me better. From web development to design, this portfolio reflects my passion for creating compelling digital experiences. Feel free to explore and reach out—I'm excited to connect!
+Welcome to my personal portfolio! This single-page responsive website is a showcase of my skills and projects, crafted using HTML and CSS. Dive into my journey, explore my projects, and get to know me better. From web development to design, this portfolio reflects my passion for creating compelling digital experiences. Feel free to explore and reach out—I'm excited to connect!
 
 Technologies Used:
 
