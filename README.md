@@ -86,7 +86,7 @@ Technologies Used:
 HTML
 CSS 
 
-This website was deployed and you can see it live here: 
+This website was deployed and you can see it live here: https://adriantutuianu.github.io/module-2-portfolio-working-with-css-challenge/
 
 ## Installation
 
