@@ -333,11 +333,11 @@ footer .footer-name {
     right: 20px;
   }
 
-.page-section {
-  flex-wrap: wrap;
- padding: 10px;
-justify-content: center;
-}
+  .page-section {
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+  }
 
   #about h2,
   #work h2,
@@ -351,15 +351,13 @@ justify-content: center;
     display: none;
   }
 
-.page-section .about-text {
-  width: 100%;
+  .page-section .about-text {
+    width: 100%;
+  }
+
+  #about h2::after,
+  #work h2::after,
+  #contact h2::after {
+    display: none;
+  }
 }
-
-#about h2::after, #work h2::after, #contact h2::after {
-
-  display: none;
-}
-
-}
-
-
