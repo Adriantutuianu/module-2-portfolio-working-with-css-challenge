@@ -333,7 +333,33 @@ footer .footer-name {
     right: 20px;
   }
 
-  .page-section h2 {
-    font-size: 20px;
-  }
+.page-section {
+  flex-wrap: wrap;
+ padding: 10px;
+justify-content: center;
 }
+
+  #about h2,
+  #work h2,
+  #contact h2 {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .page-section h2 br {
+    display: none;
+  }
+
+.page-section .about-text {
+  width: 100%;
+}
+
+#about h2::after, #work h2::after, #contact h2::after {
+
+  display: none;
+}
+
+}
+
+
